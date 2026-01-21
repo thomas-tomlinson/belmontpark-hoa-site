@@ -3,10 +3,9 @@ title: 'Fatbeam Fiber Optics Installation Issues'
 publishedAt: '2024-11-15'
 summary: 'help for dealing with issues arising from the Fatbeam fiber installation'
 ---
-Fatbeam Fiber has been installing fiber optic cabling in the neighborhood
-as you may have noticed.
+Fatbeam Fiber has been installing fiber optic cabling in the neighborhood as you may have noticed
 
-# Why is some company digging up my yard?
+## Why is some company digging up my yard?
 The Ada County Highway District  is overseeing the project, which is
 common as the areas in question are considered to be in ACHD's right
 of way— meaning the land is not technically the homeowners' property.

@@ -1,6 +1,7 @@
-import { UpdatePosts } from "@/components/posts";
+import { getAllUpdates} from "@/lib/updates"
 
 export default function HomePage() {
+    const updates = getAllUpdates();
     return (
        /*<div className="bg-[url(/hoa_entry_sign.jpg)] bg-fixed bg-top bg-contain"> */
     <div>
@@ -28,7 +29,15 @@ export default function HomePage() {
             <h1 className="text-2xl gap-x-4">Most recent updates</h1>
         </div>
         <div className="p-5">
-            <UpdatePosts />
+                <ul>
+      {updates.map((update) => (
+        <li key={update._meta.path}>
+          <a href={`/updates/${update._meta.path}`}>
+            <h3>{update.title} - {update.publishedAt}</h3>
+          </a>
+        </li>
+      ))}
+    </ul>
         </div>
     </div>
     )
