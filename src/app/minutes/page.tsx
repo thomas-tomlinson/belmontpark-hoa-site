@@ -27,6 +27,9 @@ export default function Minutes() {
         <DataTable
         ajax='https://api.belmontparkhoa.net/index.js'
         columns={columns}
+        options={{
+            order: [[0, 'desc']]
+        }}
         >
           <thead>
             <tr>

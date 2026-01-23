@@ -19,7 +19,7 @@ export default async function UpdatePage({
     notFound();
   }
   return (
-    <article className="prose lg:prose-xl p-5">
+    <article className="prose lg:prose-xl px-5">
       <h1 className="text-4xl font-bold">{update.title}</h1>
       <p >{new Date(update.publishedAt).toLocaleDateString("en-US", dateOptions)}</p>
       <hr />

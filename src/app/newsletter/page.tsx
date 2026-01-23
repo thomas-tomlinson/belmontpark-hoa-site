@@ -9,10 +9,10 @@ export default function NewsLetter() {
         {name: 'Summer 2024', filename: '2024_summer.pdf'},
     ]
     return (
-        <div className="p-5">
-            <ol>
+        <div className="p-5 text-4xl">
+            <ol className="list-disc list-inside">
                 {newsletters.map((item, index) => (
-                    <li key={index} className="text-4xl">
+                    <li key={index}>
                         <Link
                             key={index}
                             href={newsLetterLocation + item.filename}

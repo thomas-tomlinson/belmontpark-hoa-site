@@ -1,15 +1,22 @@
 import { getAllUpdates} from "@/lib/updates"
 
+const dateOptions: Intl.DateTimeFormatOptions = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+};
+
 export default function HomePage() {
-    const updates = getAllUpdates();
+    const updates = getAllUpdates(3);
     return (
        /*<div className="bg-[url(/hoa_entry_sign.jpg)] bg-fixed bg-top bg-contain"> */
     <div>
         <div className="p-5">
             <h1 className="text-4xl gap-x-4">Welcome to Belmont Park Home Owner&apos;s Association</h1>
         </div>
-        <div className="p-20">
-                <img className="float-right max-w-1/3" src='/entry_sign.jpg'/>
+        <div className="px-20">
+                <img className="float-right max-w-1/3" src='/entry_sign.jpg' alt='entry sign picture'/>
                 <p>The Belmont Park subdivision was first established in 1984, with much of the neighborhood
                 being developed between 1984-1991. Today we enjoy an established neighborhood with large,
                 mature trees, and well-maintained homes and yards. Belmont Park  neighbors take pride in
@@ -22,22 +29,25 @@ export default function HomePage() {
                 </p>
                 <p>Do you have great ideas for the neighborhood or want to get involved? We would love to hear
                 from you and invite you to participate as a Board member of the homeowner’s association.
-                Email us at BPHOA.Boise@gmail.com
+                Email us at <a href="mailto:bphoa.boise@gmail.com">BPHOA.Boise@gmail.com</a>
                 </p>
         </div>
         <div className="p-5">
             <h1 className="text-2xl gap-x-4">Most recent updates</h1>
         </div>
-        <div className="p-5">
-                <ul>
-      {updates.map((update) => (
-        <li key={update._meta.path}>
-          <a href={`/updates/${update._meta.path}`}>
-            <h3>{update.title} - {update.publishedAt}</h3>
-          </a>
-        </li>
-      ))}
-    </ul>
+        <div className="px-20">
+            <ul>
+            {updates.map((update) => (
+                <li key={update._meta.path}>
+                <a href={`/updates/${update._meta.path}`}>
+                    <p>
+                        <b className="text-semi">{update.title} - </b>
+                        <i> {new Date(update.publishedAt).toLocaleString("en-US", dateOptions)}</i>
+                    </p>
+                </a>
+                </li>
+            ))}
+            </ul>
         </div>
     </div>
     )
