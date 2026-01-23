@@ -35,7 +35,7 @@ export default function HomePage() {
         <div className="p-5">
             <h1 className="text-2xl gap-x-4">Most recent updates</h1>
         </div>
-        <div className="px-20">
+        <div className="px-10">
             <ul>
             {updates.map((update) => (
                 <li key={update._meta.path}>

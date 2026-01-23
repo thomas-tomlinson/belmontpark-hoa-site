@@ -1,14 +1,14 @@
-# OpenNext Starter
+# Belmontpark HOA website
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is the source code that powers the HOA's [website](https://www.belmontparkhoa.net).
 
-## Getting Started
+## About this project
 
-Read the documentation at https://opennext.js.org/cloudflare.
+The site is written in [Next.js](https://nextjs.org/docs) and deployed to CloudFlare workers infrastructure.
 
 ## Develop
 
-Run the Next.js development server:
+In order to develop this site locally, you need a node and git installed.  The checkout out the repo  and you can run the local version like this:
 
 ```bash
 npm run dev
@@ -16,8 +16,6 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 ## Preview
 
@@ -36,12 +34,3 @@ Deploy the application to Cloudflare:
 npm run deploy
 # or similar package manager command
 ```
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
