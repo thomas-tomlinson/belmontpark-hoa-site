@@ -1,8 +1,8 @@
 export default function ccrBylaws() {
     return (
         <div className="p-5 text-2xl">
-            <p><a href='https://drive.google.com/file/d/1evqDMWSkkDV-5gOU9oSz38dc40m_S9_H/view?usp=sharing'>CC&R&apos;s</a></p>
-            <p><a href='https://drive.google.com/file/d/1Kx585dmImKzWuNOJTi8dpCQ_nEAoBr8e/view?usp=sharing'>Articles of Incorporation & By-Laws</a></p>
+            <p className="p-2"><a href='https://r2.belmontparkhoa.net/ccrs/original_ccr.pdf'>CC&R&apos;s</a></p>
+            <p className="p-2"><a href='https://r2.belmontparkhoa.net/bylaws/bylaws_amended_nov_2025.pdf'>Articles of Incorporation & By-Laws</a></p>
         </div>
     )
 }
