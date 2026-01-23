@@ -15,7 +15,7 @@ export default function HomePage() {
         <div className="p-5">
             <h1 className="text-4xl gap-x-4">Welcome to Belmont Park Home Owner&apos;s Association</h1>
         </div>
-        <div className="px-20">
+        <div className="px-10">
                 <img className="float-right max-w-1/3" src='/entry_sign.jpg' alt='entry sign picture'/>
                 <p>The Belmont Park subdivision was first established in 1984, with much of the neighborhood
                 being developed between 1984-1991. Today we enjoy an established neighborhood with large,
