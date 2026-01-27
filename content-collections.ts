@@ -1,6 +1,7 @@
 import { defineCollection, defineConfig } from "@content-collections/core";
 import { compileMarkdown } from "@content-collections/markdown";
 import { z } from "zod";
+import remarkGfm from "remark-gfm";
 
 const updates = defineCollection({
   name: "updates",
@@ -12,7 +13,7 @@ const updates = defineCollection({
     publishedAt: z.string(),
   }),
   transform: async (document, context) => {
-    const html = await compileMarkdown(context, document);
+    const html = await compileMarkdown(context, document, {remarkPlugins: [remarkGfm]});
     return {
       ...document,
       html,
@@ -28,7 +29,7 @@ const calevents = defineCollection({
         year: z.string(),
     }),
     transform: async (document, context) => {
-        const html = await compileMarkdown(context, document);
+        const html = await compileMarkdown(context, document );
         return {
             ...document,
             html,

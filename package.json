@@ -21,15 +21,14 @@
 		"datatables.net-dt": "^2.3.5",
 		"datatables.net-react": "^1.0.1",
 		"next": "15.5.7",
-		"next-mdx-remote": "^5.0.0",
 		"react": "19.1.2",
 		"react-dom": "19.1.2",
+		"remark-gfm": "^4.0.1",
 		"sugar-high": "^0.9.5"
 	},
 	"devDependencies": {
 		"@content-collections/core": "^0.13.1",
 		"@content-collections/markdown": "^0.1.4",
-		"@content-collections/mdx": "^0.2.2",
 		"@content-collections/next": "^0.2.10",
 		"@eslint/eslintrc": "^3",
 		"@tailwindcss/postcss": "^4",

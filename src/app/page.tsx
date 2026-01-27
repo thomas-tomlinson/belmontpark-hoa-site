@@ -10,7 +10,6 @@ const dateOptions: Intl.DateTimeFormatOptions = {
 export default function HomePage() {
     const updates = getAllUpdates(3);
     return (
-       /*<div className="bg-[url(/hoa_entry_sign.jpg)] bg-fixed bg-top bg-contain"> */
     <div>
         <div className="p-5">
             <h1 className="text-4xl gap-x-4">Welcome to Belmont Park Home Owner&apos;s Association</h1>
@@ -29,7 +28,7 @@ export default function HomePage() {
                 </p>
                 <p>Do you have great ideas for the neighborhood or want to get involved? We would love to hear
                 from you and invite you to participate as a Board member of the homeowner’s association.
-                Email us at <a href="mailto:bphoa.boise@gmail.com">BPHOA.Boise@gmail.com</a>
+                Email us at <a href="mailto:bphoa.boise@gmail.com"><b>BPHOA.Boise@gmail.com</b></a>
                 </p>
         </div>
         <div className="p-5">

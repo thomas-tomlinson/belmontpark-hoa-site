@@ -12,7 +12,6 @@ const Navbar = () => {
     { name: 'Newsletter', path: '/newsletter'},
     { name: 'Dues', path: '/dues'},
     { name: 'CCRs & Bylaws', path: '/ccr-bylaws'},
-    { name: 'Forms', path: '/forms'},
     { name: 'Board', path: '/board'},
     { name: 'Contact', path: '/contact'}
     ]
